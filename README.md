@@ -14,7 +14,34 @@ Express API with basic routes:
 
 ## ABOUT
 
-Berikut ini merupakan API sistem e commerce terdiri dari tabel user, product, review, dan cart. Tabel product dan review memiliki hubungan one-to-many, artinya setiap product dapat memiliki banyak review. Tabel user, product, dan cart memiliki hubungan many-to-many, artinya setiap user dapat memiliki banyak product, dan setiap product dapat dimiliki oleh banyak user. Tabel cart berfungsi sebagai penghubung antara tabel user dan product.
+Berikut ini merupakan API management tugas dengan authentication dan authorization. Terdapat tabel user dan tabel task, hubungannya one-to-many, artinya setiap user dapat memiliki banyak task.
+
+## Aksi yang Dapat Dilakukan
+
+### Auth Actions
+
+- **Login**
+- **Register**
+
+### Admin Actions
+
+- **Get All Tasks**: Memperoleh daftar semua tugas.
+- **Create Task**: Menambahkan tugas baru.
+- **Update Task**: Mengubah informasi tugas.
+- **Delete Task**: Menghapus tugas.
+- **Get All Users**: Mendapatkan daftar semua pengguna.
+- **Delete User**: Menghapus pengguna.
+
+### User Actions
+
+- **Get User by ID**: Memperoleh informasi pengguna berdasarkan ID.
+- **Update User**: Mengubah informasi pengguna.
+- **Change Password**: Mengganti kata sandi.
+- **Update Task User**: Mengubah status tugas.
+
+### Common Actions for Admin and User
+
+- **Forgot Password**: Memulihkan kata sandi yang terlupakan melalui email.
 
 ## URL
 
@@ -26,10 +53,9 @@ http://localhost:3000
 
 LIST ENTITIES
 
-1. [Product](#Product)
-2. [Review](#Review)
+1. [Auth](#Auth)
+2. [Admin](#Admin)
 3. [User](#User)
-4. [Cart](#Cart)
 
 ---
 
